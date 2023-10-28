@@ -77,4 +77,4 @@ public class WeatherData {
     private double winddirection;
     private double windspeed;
 }
-}
+

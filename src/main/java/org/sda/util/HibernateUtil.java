@@ -1,11 +1,14 @@
 package org.sda.util;
+
+
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
-import org.sda.model.Location;
-import org.sda.model.WeatherData;
+import org.sda.models.Location;
+import org.sda.models.WeatherData;
+
 import java.util.Properties;
 public class HibernateUtil {
     public static SessionFactory sessionFactory;
@@ -17,7 +20,7 @@ public class HibernateUtil {
             properties.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
             properties.put(Environment.URL, "jdbc:mysql://localhost:3306/weatherapp");
             properties.put(Environment.USER, "root");
-            properties.put(Environment.PASS, "Marsela123");
+            properties.put(Environment.PASS, "Sovjet.11");
             properties.put(Environment.DIALECT,"org.hibernate.dialect.MySQL8Dialect");
             properties.put(Environment.HBM2DDL_AUTO, "update");
             properties.put(Environment.SHOW_SQL, true);
